@@ -1,0 +1,101 @@
+<p-card [ngClass]="{'center-phone': isPhone, 'center': !isPhone}">
+    @if (!isPhone && !isTablet) {
+        <p-timeline [value]="experience" styleClass="customized-timeline" align="alternate">
+            <ng-template #marker let-experience>
+                <span class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm" [style]="{ 'background-color': experience.color }">
+                    <i [class]="experience.icon"></i>
+                </span>
+            </ng-template>
+            <ng-template #content let-experience>
+              @if(experience.isEducation == false) 
+               { 
+                <app-work-experience-card
+                    [functionTitle]="experience.functionTitle" 
+                    [companyName]="experience.companyName" 
+                    [timespan]="experience.timespan" 
+                    [location]="experience.location"
+                    [description]="experience.description"/>
+               }
+               @else 
+               {
+                <app-education-card 
+                    [course]="experience.course"
+                    [institute]="experience.institute"
+                    [timespan]="experience.timespan"
+                    [location]="experience.location"
+                    [degree]="experience.degree"
+                    [additionalInformation]="experience.additionalInformation" />
+                }
+            </ng-template>
+        </p-timeline>
+    }
+
+    @if (isPhone){
+        <p-timeline [value]="experience" styleClass="customized-timeline" class="center-phone">
+            <ng-template #opposite let-experience>
+                <p class="opposite-align"></p>
+            </ng-template>
+    <ng-template #marker let-experience>
+        <span class="flex w-8 h-8  text-white rounded-full z-10 shadow-sm" [style]="{ 'background-color': experience.color }">
+            <i [class]="experience.icon"></i>
+        </span>
+    </ng-template>
+    <ng-template #content let-experience>
+      @if(experience.isEducation == false) 
+       { 
+        <app-work-experience-card
+            [functionTitle]="experience.functionTitle" 
+            [companyName]="experience.companyName" 
+            [timespan]="experience.timespan" 
+            [location]="experience.location"
+            [description]="experience.description"/>
+       }
+       @else 
+       {
+        <app-education-card 
+            [course]="experience.course"
+            [institute]="experience.institute"
+            [timespan]="experience.timespan"
+            [location]="experience.location"
+            [degree]="experience.degree"
+            [additionalInformation]="experience.additionalInformation" />
+        }
+    </ng-template>
+</p-timeline>
+    }
+
+     @if (isTablet) {
+          <p-timeline [value]="experience" styleClass="customized-timeline" class="center-phone">
+            <ng-template #opposite let-experience>
+                <p class="opposite-align"></p>
+            </ng-template>
+    <ng-template #marker let-experience>
+        <span class="flex w-8 h-8  text-white rounded-full z-10 shadow-sm" [style]="{ 'background-color': experience.color }">
+            <i [class]="experience.icon"></i>
+        </span>
+    </ng-template>
+            <ng-template #content let-experience>
+              @if(experience.isEducation == false) 
+               { 
+                <app-work-experience-card
+                    [functionTitle]="experience.functionTitle" 
+                    [companyName]="experience.companyName" 
+                    [timespan]="experience.timespan" 
+                    [location]="experience.location"
+                    [description]="experience.description"/>
+               }
+               @else 
+               {
+                <app-education-card 
+                    [course]="experience.course"
+                    [institute]="experience.institute"
+                    [timespan]="experience.timespan"
+                    [location]="experience.location"
+                    [degree]="experience.degree"
+                    [additionalInformation]="experience.additionalInformation" />
+                }
+            </ng-template>
+        </p-timeline>
+    }
+</p-card>
+

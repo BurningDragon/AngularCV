@@ -1,0 +1,43 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    margin-top: 1%;
+  }
+
+  .center-tablet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 1%;
+  }
+  
+.row {
+    display: flex;
+}
+
+.row-tablet {
+    display: flex;
+    width: 80%;
+    margin-top:1%;
+}
+
+.column-progress {
+    flex:50%;
+}
+
+.column-progress-phone {
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+.column-progress-tablet {
+    flex:90%;
+    margin-left:40%;
+}
+
+.column {
+    flex:50%;
+}

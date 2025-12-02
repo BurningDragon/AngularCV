@@ -1,0 +1,53 @@
+<p-card [ngClass]="{ 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+    <p-accordion value="0">
+        <p-accordion-panel value="0">
+            <p-accordion-header>Talen</p-accordion-header>
+            <p-accordion-content>
+                @for (language of languages; track language){
+                    <div [ngClass]="{'row': !isPhone && !isTablet, 'row-tablet': isTablet}">
+                        <div class="column">{{language.name}}</div>
+                        <div [ngClass]="{'column-progress-phone':isPhone, 'column-progress': !isPhone && !isTablet, 'column-progress-tablet': isTablet}">
+                            <p-progress-bar value="{{language.progress}}" showValue="false"/>
+                        </div>
+                    </div> 
+                }
+            </p-accordion-content>
+        </p-accordion-panel>
+         <p-accordion-panel value="1">
+            <p-accordion-header>Programmeertalen</p-accordion-header>
+            <p-accordion-content>
+                @for (language of programmingLanguages; track language){
+                    <div [ngClass]="{ 'row': !isPhone && !isTablet, 'row-tablet': isTablet}">
+                        <div class="column">{{language.name}}</div>
+                            <div [ngClass]="{'column-progress-phone':isPhone, 'column-progress': !isPhone && !isTablet, 'column-progress-tablet': isTablet}">
+                                <p-progress-bar value="{{language.progress}}" showValue="false"/>
+                            </div>
+                        </div> 
+                }
+            </p-accordion-content>
+        </p-accordion-panel>
+         <p-accordion-panel value="2">
+            <p-accordion-header>Vaardigheden</p-accordion-header>
+            <p-accordion-content>
+                @for (skill of skills; track skill){
+                    <div [ngClass]="{'row': !isPhone && !isTablet, 'row-tablet': isTablet}">
+                        <div class="column">{{skill.name}}</div>
+                            <div [ngClass]="{'column-progress-phone':isPhone, 'column-progress': !isPhone && !isTablet, 'column-progress-tablet': isTablet}">
+                                <p-progress-bar value="{{skill.progress}}" showValue="false"/>
+                            </div>
+                        </div> 
+                }
+            </p-accordion-content>
+        </p-accordion-panel>
+         <p-accordion-panel value="3">
+            <p-accordion-header>Competenties</p-accordion-header>
+            <p-accordion-content>
+                 @for (competence of competences; track competence){
+                    <div class="row">
+                        <div class="column">{{competence}}</div>
+                    </div> 
+                }
+            </p-accordion-content>
+        </p-accordion-panel>
+    </p-accordion>
+</p-card>

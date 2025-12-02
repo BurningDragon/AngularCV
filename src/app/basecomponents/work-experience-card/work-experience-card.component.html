@@ -1,0 +1,59 @@
+<p-fieldset>
+    <ng-template #header>
+        <div class="flex items-center gap-2 px-2">
+            <span class="label-font">{{functionTitle}}</span>
+        </div>
+    </ng-template>
+    <div class="card-span-margin">
+        <span class="label-font">
+            Waar:
+        </span>
+        @if (!isPhone){
+            <Span class="right">
+                {{companyName}} in {{location}}
+            </Span>
+        }
+    </div>
+    @if (isPhone){
+        <br/>
+        <div class="card-span-margin">
+                 {{companyName}} in {{location}}
+        </div>
+    }
+    
+    <br>
+    <div class="card-span-margin">
+        <span class="label-font">
+            Wanneer:
+        </span>
+     @if (!isPhone){
+        <Span class="right">
+            {{timespan}}
+        </Span>
+    }
+    </div>
+    @if (isPhone){
+        <br/>
+        <div class="card-span-margin">
+                {{timespan}}
+        </div>
+    }
+    <br>
+    <div class="card-span-margin">
+        <span class="label-font">
+            Werkzaamheden:
+        </span>
+        @if (!isPhone){
+        <Span class="right-description">
+            {{description}}
+        </Span>
+    }
+    </div>
+
+       @if (isPhone){
+        <br/>
+        <div class="card-span-margin">
+                {{description}}
+        </div>
+    }
+</p-fieldset>

@@ -1,0 +1,13 @@
+.test {
+    margin: 5%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    flex:50%;
+    margin-right:5%;
+}

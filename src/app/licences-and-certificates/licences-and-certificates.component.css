@@ -1,0 +1,15 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    margin-top: 1%;
+  }
+
+.label-font{
+    font-weight: bold;
+}
+
+.width-phone{
+  width: 100%;
+}

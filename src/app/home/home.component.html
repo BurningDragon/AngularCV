@@ -1,0 +1,47 @@
+<p-card [ngClass]="{'center-phone': isPhone, 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+    <ng-template #header>
+        <img alt="Card" class="w-full" src="/assets/img/profile.jpg" [ngClass]="{'image-center-phone': isPhone, 'center': !isPhone}"/>
+    </ng-template>
+    <ng-template #title> Priscilla Mönch </ng-template>
+    <p>
+        Als vrijetijdsbesteding vind ik het leuk om te gamen. Ik vind dan ook allerlei soorten
+        genres van games leuk zoals; actie, avontuur, simulatie en RPG. Naast gaming vind ik
+        het leuk om boeken te lezen, hier gaat mijn voorkeur wel uit naar boeken in het Engels.
+        Ook hier vind ik verschillende genres leuk zoals fantasie en avontuur.
+    </p>
+    <p>
+        Ik kijk graag naar anime en lees manga’s. Hierdoor ben ik ook geïnteresseerd geraakt in
+        de Japanse taal en ben ik bezig om deze te leren in mijn vrije tijd. Sinds kort ben ik 
+        begonnen aan een cursus Japans die gegeven wordt door de Volksuniversiteit in Eindhoven.
+    </p>
+</p-card>
+
+    <p-fieldset [ngClass]="{'center-fieldset-phone': isPhone, 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+       
+        <ng-template #header>
+            <div class="flex items-center">
+                <i class="pi pi-user"></i>
+                <span class="font-bold"> Persoonsgegevens</span>
+            </div>
+        </ng-template>
+        <p-table [value]="[[]]" [rows]="4">
+            <ng-template #body>
+                <tr>
+                    <td>Locatie:</td>
+                    <td>Uden</td>
+                </tr>
+                <tr>
+                    <td>Nationaliteit:</td>
+                    <td>Nederlandse</td>
+                </tr>
+                <tr>
+                    <td>Geboortedatum:</td>
+                    <td>11-01-1995</td>
+                </tr>
+                <tr>
+                    <td>Rijbewijs:</td>
+                    <td>Rijbewijs B</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </p-fieldset>

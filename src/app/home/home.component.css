@@ -1,0 +1,40 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 50%;
+    margin-top: 1%;
+  }
+
+.center-phone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+
+.center-fieldset-phone {
+    display: block;
+    margin-top: 1%;
+  }
+
+.phone-span {
+    display:block;
+  }
+
+.center-tablet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+
+.image-center-phone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 70%;
+    margin-top: 1%;
+  }

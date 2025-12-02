@@ -1,0 +1,70 @@
+<p-fieldset>
+    <ng-template #header>
+        <div class="flex items-center gap-2 px-2">
+            <span class="label-font">{{course}}</span>
+        </div>
+    </ng-template>
+    <div class="card-span-margin">
+        <span class="label-font">
+            Waar:
+        </span>
+        @if (!isPhone) {
+        <Span class="right">
+            {{institute}} in {{location}}
+        </Span>
+    }
+    </div>
+      @if (isPhone){
+        <br/>
+        <div class="card-span-margin">
+                 {{institute}} in {{location}}
+        </div>
+    }
+    <br>
+    <div class="card-span-margin">
+        <span class="label-font">
+            Wanneer:
+        </span>
+        @if (!isPhone) {
+        <Span class="right">
+            {{timespan}}
+        </Span>
+    }
+    </div>
+     @if (isPhone){
+        <br/>
+        <div class="card-span-margin">
+                 {{timespan}}
+        </div>
+    }
+    <br>
+    <div class="card-span-margin">
+        <span class="label-font">
+            Diploma:
+        </span>
+        @if (!isPhone){
+        <Span class="right">
+            {{degree}}
+        </Span>
+    }
+    </div>
+      @if (isPhone){
+        <br/>
+        <div class="card-span-margin">
+                  {{degree}}
+        </div>
+    }
+    <br>
+    <div class="card-span-margin">
+           @if (!isPhone){
+        <Span class="right">
+            {{additionalInformation}}
+        </Span>
+    }
+    </div>
+    @if (isPhone){
+        <div class="card-span-margin">
+                   {{additionalInformation}}
+        </div>
+    }
+</p-fieldset>

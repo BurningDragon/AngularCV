@@ -1,0 +1,10 @@
+<p-menubar [model]="items" [ngStyle]="{color: 'var(--p-green-600);'}" >
+  <ng-template #end class="flex items-center gap-2">
+            <p-toggleswitch [(ngModel)]="checked" (onChange)="toggleDarkMode()">
+              <ng-template #handle let-checked="checked">
+                <i [ngClass]="['!text-xs', 'pi' , checked ? 'pi-sun' : 'pi-moon']"></i>
+              </ng-template>  
+            </p-toggleswitch>
+  </ng-template>
+</p-menubar>
+<router-outlet />
