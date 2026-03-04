@@ -1,0 +1,87 @@
+{
+  "languages": {
+    "languages": "Languages",
+    "en": "English",
+    "nl": "Dutch"
+  },
+  "routes": {
+    "home": "Home",
+    "workexperience": "Work experience and Education",
+    "licences-and-certificates": "Licences and Certificates",
+    "languages-and-skills": "Languages, Competencies and Skills"
+  },
+  "personal": {
+    "descriptiontop": "In my free time I like to play games in all kinds of genres such as action, adventure, simulation and RPG. Beside gaming I also like to read books where I prefer to read books in English and in different genres such as fantasy and adventure.",
+    "descriptionbottom": "I have come to love watching anime and reading manga and because of tis I started to learn the Japanese language. I am learning it in my spare time and recently started an evening Japanese course organized by the Volksuniversiteit in Eindhoven.",
+    "location": "Location",
+    "nationality": "Nationality",
+    "dutch-nationality": "Dutch",
+    "drivers-licence": "Driver's Licence",
+    "drivers-licence-b": "Driver's Licence B",
+    "personal-details": "Personal Details"
+  },
+  "general": {
+    "where": "Where",
+    "when": "When"
+  },
+  "work": {
+    "activities": "Activities",
+    "nocore": {
+      "function-title": "Software Developer",
+      "timespan": "October 2022 - Juli 2024",
+      "description": "At Nocore, I worked on their payroll platform, which was written in ASP.NET with an MSSQL database. I added new functionality and fixed bugs. I also provided second-line support to resolve customer issues."
+    },
+    "anycoin": {
+      "function-title": "Developer",
+      "timespan": "August 2021 - August 2022",
+      "description": "At Anycoin Direct, I added new features and fixed bugs. I worked with C#/.NET and Angular, among other tools. I also learned about Event Sourcing and CQRS."
+    },
+    "ycn": {
+      "function-title": "IT Trainee",
+      "timespan": "January 2021 - June 2021",
+      "description": "At Young Capital Next I followed various training courses and obtained various certificates."
+    },
+    "whyellow": {
+      "function-title": "ICT graduate intern",
+      "timespan": "September 2019 - January 2020",
+      "description": "During this internship, I researched the possibilities and limitations of location-based augmented reality (AR) using ARCore in an Android app. I added an example to an Android app to show the possibilities. For the Android app, I worked with Kotlin, and to manage the project effectively, I used Scrum, with everything tracked in Jira."
+    }
+  },
+  "education": {
+    "degree": "Diploma",
+    "degree-obtained": "Obtained",
+    "fontys": {
+      "course": "HBO ICT Software Engineering",
+      "additional-information": "Minor Virtual Reality followed"
+    },
+    "leijgraaf": {
+      "course": "MBO Teaching Assistant"
+    },
+    "vmbo": {
+      "course": "VMBO Theoretisch"
+    }
+  },
+  "certificates": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "no-expiration-date": "No expiration date",
+      "expiration-date": "Expiration date",
+    "obtained-on": "Obtained on",
+    "organisation": "Organisation",
+    "certificate-name": "Certificate name"
+  },
+   "programming-language":{
+    "programming-languages": "Programming Languages"
+  },
+  "skill": {
+    "skills": "Skills"
+  },
+  "competencie": {
+    "competencies": "Competencies",
+    "listening": "Listening",
+    "trustworthy": "Trustworthy",
+    "perseverance": "Perseverance",
+    "eager-to-learn": "Eager to learn"
+  }
+}

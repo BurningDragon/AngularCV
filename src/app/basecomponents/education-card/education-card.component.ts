@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Fieldset } from 'primeng/fieldset';
 import { BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-education-card',
-  imports: [Fieldset],
+  imports: [Fieldset, TranslatePipe],
   templateUrl: './education-card.component.html',
   styleUrl: './education-card.component.css'
 })
