@@ -1,10 +1,27 @@
 <p-menubar [model]="items" [ngStyle]="{color: 'var(--p-green-600);'}" >
-  <ng-template #end class="flex items-center gap-2">
-            <p-toggleswitch [(ngModel)]="checked" (onChange)="toggleDarkMode()">
+  <ng-template #end>
+    <p-toolbar [style]="{'border': 'none'}">
+      <ng-template #start>
+        <p-select [options]="languages" [(ngModel)]="currentLanguage" (onClick)="switchLanguage(currentLanguage)">
+          <ng-template #dropdownicon>
+             <i class="pi pi-language"></i>
+          </ng-template>
+              <ng-template pTemplate="item" let-option>
+              {{'languages.'+ option | translate}}
+              </ng-template>
+                <ng-template pTemplate="selectedItem" let-option>
+                {{'languages.'+ option | translate}}
+              </ng-template>
+            </p-select>
+      </ng-template>
+      <ng-template #center>
+        <p-toggleswitch [(ngModel)]="checked" (onChange)="toggleDarkMode()">
               <ng-template #handle let-checked="checked">
                 <i [ngClass]="['!text-xs', 'pi' , checked ? 'pi-sun' : 'pi-moon']"></i>
               </ng-template>  
-            </p-toggleswitch>
+            </p-toggleswitch> 
+      </ng-template>
+    </p-toolbar>
   </ng-template>
 </p-menubar>
 <router-outlet />

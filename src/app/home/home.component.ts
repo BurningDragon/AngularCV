@@ -4,10 +4,11 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { TableModule } from 'primeng/table';
 import { BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
+import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-home',
-  imports: [CardModule, FieldsetModule, TableModule, CommonModule],
+  imports: [CardModule, FieldsetModule, TableModule, CommonModule, TranslatePipe],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

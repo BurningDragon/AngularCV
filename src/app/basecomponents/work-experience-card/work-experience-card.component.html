@@ -1,12 +1,12 @@
 <p-fieldset>
     <ng-template #header>
         <div class="flex items-center gap-2 px-2">
-            <span class="label-font">{{functionTitle}}</span>
+            <span class="label-font">{{functionTitle | translate}}</span>
         </div>
     </ng-template>
     <div class="card-span-margin">
         <span class="label-font">
-            Waar:
+            {{'general.where' | translate}}
         </span>
         @if (!isPhone){
             <Span class="right">
@@ -24,28 +24,28 @@
     <br>
     <div class="card-span-margin">
         <span class="label-font">
-            Wanneer:
+           {{'general.when' | translate}}
         </span>
      @if (!isPhone){
         <Span class="right">
-            {{timespan}}
+            {{timespan | translate}}
         </Span>
     }
     </div>
     @if (isPhone){
         <br/>
         <div class="card-span-margin">
-                {{timespan}}
+                {{timespan | translate}}
         </div>
     }
     <br>
     <div class="card-span-margin">
         <span class="label-font">
-            Werkzaamheden:
+           {{'work.activities' | translate}}
         </span>
         @if (!isPhone){
         <Span class="right-description">
-            {{description}}
+            {{description | translate}}
         </Span>
     }
     </div>
@@ -53,7 +53,7 @@
        @if (isPhone){
         <br/>
         <div class="card-span-margin">
-                {{description}}
+                {{description | translate}}
         </div>
     }
 </p-fieldset>

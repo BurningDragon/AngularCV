@@ -4,10 +4,11 @@ import { CardModule } from 'primeng/card';
 import { ProgressBar } from 'primeng/progressbar';
 import { BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-languages-and-skills',
-  imports: [AccordionModule, CardModule, ProgressBar, CommonModule],
+  imports: [AccordionModule, CardModule, ProgressBar, CommonModule, TranslatePipe],
   templateUrl: './languages-and-skills.component.html',
   styleUrl: './languages-and-skills.component.css'
 })
@@ -63,11 +64,11 @@ export class LanguagesAndSkillsComponent {
 
         this.languages = [
           {
-            name: "Nederlands",
+            name: "nl",
             progress: '90'
           },
           {
-            name: "Engels",
+            name: "en",
             progress: '90'
           }
         ];
@@ -83,6 +84,6 @@ export class LanguagesAndSkillsComponent {
           }
         ];
 
-        this.competences = ["Luisterend", "Betrouwbaar", "Doorzettingsvermogen", "Leergierig"];
+        this.competences = ["listening", "trustworthy", "perseverance", "eager-to-learn"];
       }
 }

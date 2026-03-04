@@ -4,18 +4,18 @@
         <p-table [value]="certificates" [tableStyle]="{ 'min-width': '50rem' }">
             <ng-template #header>
                 <tr>
-                    <th>Naam certificaat</th>
-                    <th>Organisatie</th>
-                    <th>Behaald op</th>
-                    <th>Verval datum</th>
+                    <th>{{"certificates.certificate-name" | translate}}</th>
+                    <th>{{"certificates.organisation" |translate}}</th>
+                    <th>{{"certificates.obtained-on" |translate}}</th>
+                    <th>{{"certificates.expiration-date" | translate}}</th>
                 </tr>
             </ng-template>
             <ng-template #body let-certificate>
                 <tr>
                     <td>{{ certificate.name }}</td>
                     <td>{{ certificate.organization }}</td>
-                    <td>{{ certificate.achieved }}</td>
-                    <td>{{ certificate.expiration }}</td>
+                    <td>{{ certificate.achievedMonth | translate }} {{ certificate.achievedYear}}</td>
+                    <td>{{ certificate.expirationMonth | translate }} @if (certificate.expirationYear != null) {{{certificate.expirationYear}}}</td>
                 </tr>
             </ng-template>
          </p-table>

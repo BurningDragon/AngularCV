@@ -6,7 +6,7 @@
     </ng-template>
     <div class="card-span-margin">
         <span class="label-font">
-            Waar:
+           {{'general.where' | translate}}
         </span>
         @if (!isPhone) {
         <Span class="right">
@@ -23,7 +23,7 @@
     <br>
     <div class="card-span-margin">
         <span class="label-font">
-            Wanneer:
+             {{'general.when' | translate}}
         </span>
         @if (!isPhone) {
         <Span class="right">
@@ -40,31 +40,31 @@
     <br>
     <div class="card-span-margin">
         <span class="label-font">
-            Diploma:
+            {{"education.degree" | translate}}
         </span>
         @if (!isPhone){
         <Span class="right">
-            {{degree}}
+            {{degree | translate}}
         </Span>
     }
     </div>
       @if (isPhone){
         <br/>
         <div class="card-span-margin">
-                  {{degree}}
+                  {{degree | translate}}
         </div>
     }
     <br>
     <div class="card-span-margin">
            @if (!isPhone){
         <Span class="right">
-            {{additionalInformation}}
+            {{additionalInformation | translate}}
         </Span>
     }
     </div>
     @if (isPhone){
         <div class="card-span-margin">
-                   {{additionalInformation}}
+                   {{additionalInformation | translate}}
         </div>
     }
 </p-fieldset>

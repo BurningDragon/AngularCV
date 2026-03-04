@@ -3,7 +3,7 @@ import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { WorkExperienceCardComponent } from "../basecomponents/work-experience-card/work-experience-card.component";
 import { EducationCardComponent } from '../basecomponents/education-card/education-card.component';
-import { BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,79 +13,73 @@ import { CommonModule } from '@angular/common';
   styleUrl: './work-experience.component.css'
 })
 export class WorkExperienceComponent {
-  experience:any[];
+  experience: any[];
   isPhone: boolean = false;
   isTablet: boolean = false;
-  
-  constructor(private responsive: BreakpointObserver){
+
+  constructor(private responsive: BreakpointObserver) {
     this.experience = [
       {
-        functionTitle: "Software Ontwikkelaar", 
-        companyName: "Nocore Group BV", 
+        functionTitle: "work.nocore.function-title",
+        companyName: "Nocore Group BV",
         location: "Uden",
-        timespan: "oktober 2022 - juli 2024",
-        description: `Bij Nocore heb ik gewerkt aan hun verloningsplatform dat is geschreven in ASP.NET met een MSSQL database. 
-                      Hierbij heb ik nieuwe functionaliteiten toegevoegd en bugs opgelost. 
-                      Ik heb ook 2e lijns support geleverd om problemen waar klanten tegenaan liepen op te lossen.`, 
+        timespan: "work.nocore.timespan",
+        description: "work.nocore.description",
         icon: "pi pi-briefcase",
         isEducation: false
       },
       {
-        functionTitle: "Developer", 
-        companyName: "Anycoin Direct", 
-        location: "Veghel", 
-        timespan: "augustus 2021 - augustus 2022", 
-        description: `Bij Anycoin Direct heb ik nieuwe functionaliteiten toegevoegd en bugfixes gedaan. Ik heb onder andere gewerkt met C#/.NET en Angular.
-                      Daarnaast heb ik hier kennis gemaakt met Event Sourcing en CQRS`, 
+        functionTitle: "work.anycoin.function-title",
+        companyName: "Anycoin Direct",
+        location: "Veghel",
+        timespan: "work.anycoin.timespan",
+        description: "work.anycoin.description",
         icon: "pi pi-briefcase",
         isEducation: false
       },
       {
-        functionTitle: "IT Trainee", 
-        companyName: "Young Capital Next", 
-        location: "Eindhoven", 
-        timespan: "januari 2021 - juni 2021", 
-        description: `Bij Young Capital Next heb ik verschillende trainingen gevolgd en daarbij verschillende certificaten behaald.`, 
+        functionTitle: "work.ycn.function-title",
+        companyName: "Young Capital Next",
+        location: "Eindhoven",
+        timespan: "work.ycn.timespan",
+        description: "work.ycn.description",
         icon: "pi pi-briefcase",
         isEducation: false
       },
       {
-        functionTitle: "Afstudeer stagiaire ICT", 
-        companyName: "Whyellow", 
-        location: "Eindhoven", 
-        timespan: "september 2019 - januari 2020", 
-        description: `Bij deze afstudeerstage heb ik onderzoek gedaan naar de mogelijkheden en beperkingen van locatiegebaseerde Augmented Reality met ARCore in een Android app. 
-                      Hierbij heb ik ook een uitbreiding gemaakt voor een Android app als voorbeeld van de mogelijkheden.
-                      Voor de Android app heb ik gewerkt met Kotlin en om het project in goede banen te leiden is er gebruik gemaakt van Scrum waarbij alles werd bijgehouden in Jira.`, 
-        icon: "pi pi-briefcase",
+        functionTitle: "work.whyellow.function-title",
+        companyName: "Whyellow",
+        location: "Eindhoven",
+        timespan: "work.whyellow.timespan",
+        description: "work.whyellow.description", icon: "pi pi-briefcase",
         isEducation: false
       },
       {
-        course: "HBO ICT Software Engineering",
+        course: "education.fontys.course",
         institute: "Fontys Hogescholen",
         location: "Eindhoven",
-        degree: "Behaald",
-        timespan: "2015-2020",
-        additionalInformation: "Minor Virtual Reality gevolgd",
+        degree: "education.degree-obtained",
+        timespan: "2015 - 2020",
+        additionalInformation: "education.fontys.additional-information",
         isEducation: true,
         icon: "pi pi-graduation-cap",
       },
       {
-        course: "MBO Onderwijsassistent",
+        course: "education.leijgraaf.course",
         institute: "ROC de Leijgraaf",
         location: "Veghel",
-        degree: "Behaald",
-        timespan: "2011-2015",
+       degree: "education.degree-obtained",
+        timespan: "2011 - 2015",
         additionalInformation: "",
         isEducation: true,
         icon: "pi pi-graduation-cap",
       },
       {
-        course: "VMBO Theoretisch",
+        course: "education.vmbo.course",
         institute: "Udens College VMBO",
         location: "Uden",
-        degree: "Behaald",
-        timespan: "2007-2011",
+        degree: "education.degree-obtained",
+        timespan: "2007 - 2011",
         additionalInformation: "",
         isEducation: true,
         icon: "pi pi-graduation-cap",
@@ -97,15 +91,15 @@ export class WorkExperienceComponent {
     this.responsive.observe([Breakpoints.Handset]).subscribe(result => {
       this.isPhone = false;
 
-      if(result.matches){
+      if (result.matches) {
         this.isPhone = true;
       }
     });
 
-     this.responsive.observe([Breakpoints.WebPortrait, Breakpoints.Large]).subscribe(result => {
+    this.responsive.observe([Breakpoints.WebPortrait, Breakpoints.Large]).subscribe(result => {
       this.isTablet = false;
 
-      if(result.matches){
+      if (result.matches) {
         this.isTablet = true;
       }
     });
