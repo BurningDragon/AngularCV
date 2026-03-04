@@ -24,18 +24,14 @@ export class AppComponent {
   languages = ["en", "nl"];
   currentLanguage = 'en';
 
-  //private translate = inject(TranslateService);
-
   constructor(private translate: TranslateService) {
     this.translate.addLangs(this.languages);
 
     const savedLanguage = localStorage.getItem('language') || 'en';
     this.translate.setFallbackLang(savedLanguage);
-    //this.switchLanguage(savedLanguage);
   }
 
   ngOnInit() {
-    console.log("oninit")
     const savedLanguage = localStorage.getItem('language') || 'en';
     this.switchLanguage(savedLanguage);
   }
@@ -54,10 +50,6 @@ export class AppComponent {
   }
 
   async initializeItems() {
-    console.log("initialize items begon");
-    const savedLanguage = localStorage.getItem('language') || 'en';
-    console.log(savedLanguage);
-    console.log("currentlang",this.translate.getCurrentLang());
     await firstValueFrom(this.translate.get("languages.en"));
    this.items = [
           {
