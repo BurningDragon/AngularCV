@@ -29,8 +29,8 @@
    @for(item of certificates; track item){
         <span><p class="label-font">Naam certificaat:</p><p>{{item.name}}</p></span>
         <span><p class="label-font">Organisatie:</p><p>{{item.organization}}</p></span>
-        <span><p class="label-font">Behaald op:</p><p>{{item.achieved}}</p></span>
-        <span><p class="label-font">Verval datum:</p><p>{{item.expiration}}</p></span>
+        <span><p class="label-font">Behaald op:</p><p>{{item.achievedMonth | translate}} {{ item.achievedYear}}</p></span>
+        <span><p class="label-font">Verval datum:</p><p>{{item.expirationMonth | translate }} @if (item.expirationYear != null) {{{item.expirationYear}}}</p></span>
         <p-divider/>
     }
 </p-card>
