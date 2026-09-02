@@ -6,6 +6,7 @@
     float: right;
     width: 75%;
     text-align:justify;
+    white-space: pre-line;
 }
 
 .label-font{

@@ -12,7 +12,7 @@
   }
 
 @media (any-pointer:coarse){
-::ng-deep .p-timeline-event-opposite {
-    display: none;
+  ::ng-deep .p-timeline-event-opposite {
+  display: none !important;
 }
 }  

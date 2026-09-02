@@ -4,10 +4,7 @@
     </ng-template>
     <ng-template #title> Priscilla Mönch </ng-template>
     <p>
-       {{'personal.descriptiontop' | translate}}
-    </p>
-    <p>
-        {{'personal.descriptionbottom' | translate}}
+       {{'personal.description' | translate}}
     </p>
 </p-card>
 
@@ -36,3 +33,15 @@
             </ng-template>
         </p-table>
     </p-fieldset>
+
+    <p-fieldset [ngClass]="{'center-phone': isPhone, 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+    <ng-template #header>
+            <div class="flex items-center">
+                <i class="pi pi-book"></i>
+                <span class="font-bold"> {{'personal.interests' | translate}}</span>
+            </div>
+        </ng-template>
+    <p style="white-space: pre-line;">
+       {{'personal.interests-description' | translate}}
+    </p>
+</p-fieldset>

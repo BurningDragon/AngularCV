@@ -2,7 +2,9 @@
   "languages": {
     "languages": "Languages",
     "en": "English",
-    "nl": "Dutch"
+    "nl": "Dutch",
+     "en-skills": "English - Fluent",
+    "nl-skills": "Nederlands - Native language"
   },
   "routes": {
     "home": "Home",
@@ -11,8 +13,9 @@
     "languages-and-skills": "Languages, Competencies and Skills"
   },
   "personal": {
-    "descriptiontop": "In my free time I like to play games in all kinds of genres such as action, adventure, simulation and RPG. Beside gaming I also like to read books where I prefer to read books in English and in different genres such as fantasy and adventure.",
-    "descriptionbottom": "I have come to love watching anime and reading manga and because of tis I started to learn the Japanese language. I am learning it in my spare time and besides using Duolingo, I recently have followed an evening course Japanese organized by the Volksuniversiteit in Eindhoven.",
+    "description": "Eager-to-learn software developer who enjoys discovering new technologies and perseveres when something does not work right away. I am motivated to continue to grow and contributing to reliable user-friendly software solutions. ",
+    "interests":"Interests",
+    "interests-description":"Gaming and reading in differenct genres such as fantasy, action and adventure.\nJapanese culture and learning the Japanese language",
     "location": "Location",
     "nationality": "Nationality",
     "dutch-nationality": "Dutch",
@@ -29,12 +32,12 @@
     "nocore": {
       "function-title": "Software Developer",
       "timespan": "October 2022 - Juli 2024",
-      "description": "At Nocore, I worked on their payroll platform, which was written in ASP.NET with an MSSQL database. I added new functionality and fixed bugs. I also provided second-line support to resolve customer issues."
+      "description": "I worked on a payroll platform where users can enter their hours worked, allowing the employer to run the payroll.\n\nI worked with ASP.NET MVC and an MSSQL database.\n\nI provided second-line support to investigate issues encountered by customers, resolving them immediately where possible or creating Jira tickets to ensure they can be addressed in a future release.\n\nI investigated the possibility of adding end-to-end tests to reduce the workload on testers by cutting down on manual testing. Following a demonstration, I implemented the initial tests."
     },
     "anycoin": {
       "function-title": "Developer",
       "timespan": "August 2021 - August 2022",
-      "description": "At Anycoin Direct, I added new features and fixed bugs. I worked with C#/.NET and Angular, among other tools. I also learned about Event Sourcing and CQRS."
+      "description": "I worked on addig new features and fixing bugs to enable users to buy or sell cryptocurrencies.\n\nI Worked with C#/.NET and Angular.\n\nI have been introduced to Event Sourcing and CQRS."
     },
     "ycn": {
       "function-title": "IT Trainee",
@@ -44,7 +47,7 @@
     "whyellow": {
       "function-title": "ICT graduate intern",
       "timespan": "September 2019 - January 2020",
-      "description": "During this internship, I researched the possibilities and limitations of location-based augmented reality (AR) using ARCore in an Android app. I added an example to an Android app to show the possibilities. For the Android app, I worked with Kotlin, and to manage the project effectively, I used Scrum, with everything tracked in Jira."
+      "description": "I investigated the possibilites and limitations of location-based Augmented Reality using Google's ARCore within an Android app. As a demonstration of these capabilities, I developed an extension for an Anroid app that allows users to look around their surroundings using their phone's camera in the app and view logo's along with their distance from the user.\n\nI used Kotlin for the Android app, and the project was managed using Scrum and all tasks were tracked in Jira."
     }
   },
   "education": {

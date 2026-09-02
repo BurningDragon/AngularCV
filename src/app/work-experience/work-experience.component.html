@@ -31,10 +31,7 @@
     }
 
     @if (isPhone){
-        <p-timeline [value]="experience" styleClass="customized-timeline" class="center-phone">
-            <ng-template #opposite let-experience>
-                <p class="opposite-align"></p>
-            </ng-template>
+        <p-timeline [value]="experience" align="left" class="center-phone">
     <ng-template #marker let-experience>
         <span class="flex w-8 h-8  text-white rounded-full z-10 shadow-sm" [style]="{ 'background-color': experience.color }">
             <i [class]="experience.icon"></i>
@@ -65,10 +62,7 @@
     }
 
      @if (isTablet) {
-          <p-timeline [value]="experience" styleClass="customized-timeline" class="center-phone">
-            <ng-template #opposite let-experience>
-                <p class="opposite-align"></p>
-            </ng-template>
+          <p-timeline [value]="experience" align="left" class="center-phone">
     <ng-template #marker let-experience>
         <span class="flex w-8 h-8  text-white rounded-full z-10 shadow-sm" [style]="{ 'background-color': experience.color }">
             <i [class]="experience.icon"></i>
