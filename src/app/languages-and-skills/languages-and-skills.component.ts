@@ -16,7 +16,6 @@ export class LanguagesAndSkillsComponent {
       programmingLanguages: any[];
       languages: any[];
       skills: any[];
-      competences: any[];
       isPhone: boolean = false;
         isTablet: boolean = false;
       
@@ -41,49 +40,39 @@ export class LanguagesAndSkillsComponent {
       constructor(private responsive: BreakpointObserver){
         this.programmingLanguages = [
           {
-            name: "C#",
-            progress: '60'
+            name: "C#"
           },
           {
-            name: "ASP.NET",
-            progress: '50'
+            name: "ASP.NET"
           },
           {
             name: "SQL",
             progress: '40'
           },
           {
-            name: "JavaScript",
-            progress: '40'
+            name: "JavaScript"
           },
           {
-            name: "HTML/CSS",
-            progress: '40'
+            name: "HTML/CSS"
           }
         ];
 
         this.languages = [
           {
-            name: "nl",
-            progress: '90'
+            name: "nl-skills"
           },
           {
-            name: "en",
-            progress: '90'
+            name: "en-skills"
           }
         ];
 
         this.skills = [
            {
-            name: "Scrum",
-            progress: '60'
+            name: "Scrum"
           },
           {
-            name: "Git",
-            progress: '50'
+            name: "Git"
           }
         ];
-
-        this.competences = ["listening", "trustworthy", "perseverance", "eager-to-learn"];
       }
 }
