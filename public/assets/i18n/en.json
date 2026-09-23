@@ -10,7 +10,8 @@
     "home": "Home",
     "workexperience": "Work experience and Education",
     "licences-and-certificates": "Licences and Certificates",
-    "languages-and-skills": "Languages, Competencies and Skills"
+    "languages-and-skills": "Languages, Competencies and Skills",
+    "projects": "Projects"
   },
   "personal": {
     "description": "Eager-to-learn software developer who enjoys discovering new technologies and perseveres when something does not work right away. I am motivated to continue to grow and contributing to reliable user-friendly software solutions. ",
@@ -86,5 +87,17 @@
     "trustworthy": "Trustworthy",
     "perseverance": "Perseverance",
     "eager-to-learn": "Eager to learn"
+  },
+  "projects":{
+    "introduction": "I am working on various projects to keep my knowledge up to date and explore new programming languages and techniques.",
+    "angular-cv": {
+      "title": "My cv in Angular with TypeScript",
+      "description": "After working with Angular a few times, I wanted to get a better understanding of how it works and what I can do with it. My idea was to turn my CV into a website and publish it via GitHub Pages."
+    },
+    "manga-tracker": {
+      "title": "Manga Tracker",
+      "description": "I have started building a .NET API with a Next.js front-end to track the manga I own and display the collection in an organized way. My goal for this application is to add manga titles and mark them as actually owned. The basic CRUD functionality (adding, updating, and deleting manga) is already implemented in the API, and I am currently integrating these features into the front-end. Eventually, I also plan to add user accounts and authentication to the application."
+    }
   }
+  
 }

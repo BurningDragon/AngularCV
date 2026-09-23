@@ -1,0 +1,46 @@
+  <p-fieldset [ngClass]="{'center-phone': isPhone, 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+    <ng-template #header>
+            <div class="flex items-center">
+                <i class="pi pi-microchip"></i>
+            </div>
+        </ng-template>
+    <p style="white-space: pre-line;">
+       {{'projects.introduction' | translate}}
+    </p>
+</p-fieldset>
+
+ <p-fieldset [ngClass]="{'center-phone': isPhone, 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+    <ng-template #header>
+            <div class="flex items-center">
+                <i class="pi pi-microchip"></i>
+                <span class="font-bold"> {{'projects.angular-cv.title' | translate}}</span>
+            </div>
+        </ng-template>
+    <p style="white-space: pre-line;">
+       {{'projects.angular-cv.description' | translate}}
+    </p>
+
+    <a href="https://github.com/BurningDragon/AngularCV" rel="noopener noreferrer" target="_blank" pTooltip="https://github.com/BurningDragon/AngularCV"  showDelay="1000" hideDelay="300">
+        <p-button label="Github Repository" icon="pi pi-github" [outlined]="true" [rounded]="true"/>
+    </a>
+</p-fieldset>
+
+ <p-fieldset [ngClass]="{'center-phone': isPhone, 'center': !isPhone && !isTablet, 'center-tablet': isTablet}">
+    <ng-template #header>
+            <div class="flex items-center">
+                <i class="pi pi-microchip"></i>
+                <span class="font-bold"> {{'projects.manga-tracker.title' | translate}}</span>
+            </div>
+        </ng-template>
+    <p style="white-space: pre-line;">
+       {{'projects.manga-tracker.description' | translate}}
+    </p>
+
+    <a href="https://github.com/BurningDragon/MangaTrackerAPI" rel="noopener noreferrer" target="_blank" pTooltip="https://github.com/BurningDragon/MangaTrackerAPI"  showDelay="1000" hideDelay="300">
+        <p-button label="Github Backend Repository " icon="pi pi-github" [outlined]="true" [rounded]="true"/>
+    </a>
+    <p-divider />
+    <a href="https://github.com/BurningDragon/MangaTrackerFrontend" rel="noopener noreferrer" target="_blank" pTooltip="https://github.com/BurningDragon/MangaTrackerFrontend"  showDelay="1000" hideDelay="300">
+        <p-button label="Github Front-end Repository " icon="pi pi-github" [outlined]="true" [rounded]="true"/>
+    </a>
+</p-fieldset>

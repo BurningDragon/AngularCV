@@ -10,7 +10,8 @@
     "home": "Home",
     "workexperience": "Werkervaring en Opleidingen",
     "licences-and-certificates": "Licenties en Certificaten",
-    "languages-and-skills": "Talen, Competenties en Vaardigheden"
+    "languages-and-skills": "Talen, Competenties en Vaardigheden",
+    "projects": "Projecten"
   },
   "personal": {
     "description": "Leergierige softwareontwikkelaar die graag nieuwe technieken ontdekt en doorzet wanneer iets niet lukt. Ik ben gemotiveerd om mijzelf verder te ontwikkelen en bij te dragen aan betrouwbare en gebruiksvriendelijke softwareoplossingen.",
@@ -79,5 +80,19 @@
   },
     "skill": {
     "skills": "Vaardigheden"
+  },
+  "projects":{
+    "introduction": "Ik ben bezig met verschillende projecten om mijn kennis op peil te houden en nieuwe programmeertalen en technieken te ontdekken.",
+    "angular-cv": {
+      "title": "Mijn cv in Angular met TypeScript",
+      "description": "Na een aantal keer in aanraking te zijn gekomen met Angular wilde ik een beter beeld krijgen van hoe Angular werkt en wat ik er mee kan doen. Mijn idee was om mijn cv om te zetten in een website en deze via Github pages te publiceren.",
+      "github-repository": "https://github.com/BurningDragon/AngularCV"
+    },
+    "manga-tracker": {
+      "title": "Manga Tracker",
+      "description": "Ik ben begonnen aan een .NET API met een Next.js front-end om bij te houden welke manga’s ik heb en dit overzichtelijk neer kan zetten. Mijn doel van deze applicatie is om de manga’s toe te voegen aan de applicatie en aan te geven dat ik de manga daadwerkelijk heb. De basis functionaliteiten van het toevoegen, updaten en verwijderen van de manga zitten op dit moment al in de API en ik ben bezig om deze functionaliteiten te verwerken in de front-end. Uiteindelijk wil ik ook gebruikersaccounts en authenticatie toevoegen aan de applicatie.",
+      "github-repositoy-frontend": "https://github.com/BurningDragon/MangaTrackerFrontend",
+      "github-repository-backend": "https://github.com/BurningDragon/MangaTrackerAPI"
+    }
   }
 }
