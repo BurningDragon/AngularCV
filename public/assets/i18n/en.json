@@ -4,7 +4,7 @@
     "en": "English",
     "nl": "Dutch",
      "en-skills": "English - Fluent",
-    "nl-skills": "Nederlands - Native language"
+    "nl-skills": "Dutch - Native language"
   },
   "routes": {
     "home": "Home",
@@ -15,12 +15,12 @@
   "personal": {
     "description": "Eager-to-learn software developer who enjoys discovering new technologies and perseveres when something does not work right away. I am motivated to continue to grow and contributing to reliable user-friendly software solutions. ",
     "interests":"Interests",
-    "interests-description":"Gaming and reading in differenct genres such as fantasy, action and adventure.\nJapanese culture and learning the Japanese language",
+    "interests-description":"Gaming and reading in different genres such as fantasy, action and adventure.\nJapanese culture and learning the Japanese language",
     "location": "Location",
     "nationality": "Nationality",
     "dutch-nationality": "Dutch",
     "drivers-licence": "Driver's Licence",
-    "drivers-licence-b": "Driver's Licence B",
+    "drivers-licence-b": "Category B driving licence",
     "personal-details": "Personal Details"
   },
   "general": {
