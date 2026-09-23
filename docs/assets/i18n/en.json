@@ -1,0 +1,103 @@
+{
+  "languages": {
+    "languages": "Languages",
+    "en": "English",
+    "nl": "Dutch",
+     "en-skills": "English - Fluent",
+    "nl-skills": "Dutch - Native language"
+  },
+  "routes": {
+    "home": "Home",
+    "workexperience": "Work experience and Education",
+    "licences-and-certificates": "Licences and Certificates",
+    "languages-and-skills": "Languages, Competencies and Skills",
+    "projects": "Projects"
+  },
+  "personal": {
+    "description": "Eager-to-learn software developer who enjoys discovering new technologies and perseveres when something does not work right away. I am motivated to continue to grow and contributing to reliable user-friendly software solutions. ",
+    "interests":"Interests",
+    "interests-description":"Gaming and reading in different genres such as fantasy, action and adventure.\nJapanese culture and learning the Japanese language",
+    "location": "Location",
+    "nationality": "Nationality",
+    "dutch-nationality": "Dutch",
+    "drivers-licence": "Driver's Licence",
+    "drivers-licence-b": "Category B driving licence",
+    "personal-details": "Personal Details"
+  },
+  "general": {
+    "where": "Where",
+    "when": "When"
+  },
+  "work": {
+    "activities": "Activities",
+    "nocore": {
+      "function-title": "Software Developer",
+      "timespan": "October 2022 - Juli 2024",
+      "description": "I worked on a payroll platform where users can enter their hours worked, allowing the employer to run the payroll.\n\nI worked with ASP.NET MVC and an MSSQL database.\n\nI provided second-line support to investigate issues encountered by customers, resolving them immediately where possible or creating Jira tickets to ensure they can be addressed in a future release.\n\nI investigated the possibility of adding end-to-end tests to reduce the workload on testers by cutting down on manual testing. Following a demonstration, I implemented the initial tests."
+    },
+    "anycoin": {
+      "function-title": "Developer",
+      "timespan": "August 2021 - August 2022",
+      "description": "I worked on addig new features and fixing bugs to enable users to buy or sell cryptocurrencies.\n\nI Worked with C#/.NET and Angular.\n\nI have been introduced to Event Sourcing and CQRS."
+    },
+    "ycn": {
+      "function-title": "IT Trainee",
+      "timespan": "January 2021 - June 2021",
+      "description": "At Young Capital Next I followed various training courses and obtained various certificates."
+    },
+    "whyellow": {
+      "function-title": "ICT graduate intern",
+      "timespan": "September 2019 - January 2020",
+      "description": "I investigated the possibilites and limitations of location-based Augmented Reality using Google's ARCore within an Android app. As a demonstration of these capabilities, I developed an extension for an Anroid app that allows users to look around their surroundings using their phone's camera in the app and view logo's along with their distance from the user.\n\nI used Kotlin for the Android app, and the project was managed using Scrum and all tasks were tracked in Jira."
+    }
+  },
+  "education": {
+    "degree": "Diploma",
+    "degree-obtained": "Obtained",
+    "fontys": {
+      "course": "HBO ICT Software Engineering",
+      "additional-information": "Minor Virtual Reality followed"
+    },
+    "leijgraaf": {
+      "course": "MBO Teaching Assistant"
+    },
+    "vmbo": {
+      "course": "VMBO Theoretisch"
+    }
+  },
+  "certificates": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "no-expiration-date": "No expiration date",
+      "expiration-date": "Expiration date",
+    "obtained-on": "Obtained on",
+    "organisation": "Organisation",
+    "certificate-name": "Certificate name"
+  },
+   "programming-language":{
+    "programming-languages": "Programming Languages"
+  },
+  "skill": {
+    "skills": "Skills"
+  },
+  "competencie": {
+    "competencies": "Competencies",
+    "listening": "Listening",
+    "trustworthy": "Trustworthy",
+    "perseverance": "Perseverance",
+    "eager-to-learn": "Eager to learn"
+  },
+  "projects":{
+    "introduction": "I am working on various projects to keep my knowledge up to date and explore new programming languages and techniques.",
+    "angular-cv": {
+      "title": "My cv in Angular with TypeScript",
+      "description": "After working with Angular a few times, I wanted to get a better understanding of how it works and what I can do with it. My idea was to turn my CV into a website and publish it via GitHub Pages."
+    },
+    "manga-tracker": {
+      "title": "Manga Tracker",
+      "description": "I have started building a .NET API with a Next.js front-end to track the manga I own and display the collection in an organized way. My goal for this application is to add manga titles and mark them as actually owned. The basic CRUD functionality (adding, updating, and deleting manga) is already implemented in the API, and I am currently integrating these features into the front-end. Eventually, I also plan to add user accounts and authentication to the application."
+    }
+  }
+  
+}
