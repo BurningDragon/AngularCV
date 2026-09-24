@@ -3,24 +3,25 @@
     "languages": "Languages",
     "en": "English",
     "nl": "Dutch",
-     "en-skills": "English - Fluent",
-    "nl-skills": "Nederlands - Native language"
+    "en-skills": "English - Fluent",
+    "nl-skills": "Dutch - Native language"
   },
   "routes": {
     "home": "Home",
     "workexperience": "Work experience and Education",
     "licences-and-certificates": "Licences and Certificates",
-    "languages-and-skills": "Languages, Competencies and Skills"
+    "languages-and-skills": "Languages, Competencies and Skills",
+    "projects": "Projects"
   },
   "personal": {
     "description": "Eager-to-learn software developer who enjoys discovering new technologies and perseveres when something does not work right away. I am motivated to continue to grow and contributing to reliable user-friendly software solutions. ",
-    "interests":"Interests",
-    "interests-description":"Gaming and reading in differenct genres such as fantasy, action and adventure.\nJapanese culture and learning the Japanese language",
+    "interests": "Interests",
+    "interests-description": "Gaming and reading in different genres such as fantasy, action and adventure.\nJapanese culture and learning the Japanese language",
     "location": "Location",
     "nationality": "Nationality",
     "dutch-nationality": "Dutch",
     "drivers-licence": "Driver's Licence",
-    "drivers-licence-b": "Driver's Licence B",
+    "drivers-licence-b": "Category B driving licence",
     "personal-details": "Personal Details"
   },
   "general": {
@@ -69,12 +70,12 @@
     "february": "February",
     "march": "March",
     "no-expiration-date": "No expiration date",
-      "expiration-date": "Expiration date",
+    "expiration-date": "Expiration date",
     "obtained-on": "Obtained on",
     "organisation": "Organisation",
     "certificate-name": "Certificate name"
   },
-   "programming-language":{
+  "programming-language": {
     "programming-languages": "Programming Languages"
   },
   "skill": {
@@ -86,5 +87,17 @@
     "trustworthy": "Trustworthy",
     "perseverance": "Perseverance",
     "eager-to-learn": "Eager to learn"
+  },
+  "projects": {
+    "introduction": "I am working on various projects to keep my knowledge up to date and explore new programming languages and techniques.",
+    "angular-cv": {
+      "title": "My cv in Angular with TypeScript",
+      "description": "After working with Angular a few times, I wanted to get a better understanding of how it works and what I can do with it. My idea was to turn my CV into a website and publish it via GitHub Pages."
+    },
+    "manga-tracker": {
+      "title": "Manga Tracker",
+      "description": "I have started building a .NET API with a Next.js front-end to track the manga I own and display the collection in an organized way. My goal for this application is to add manga titles and mark them as actually owned. The basic CRUD functionality (adding, updating, and deleting manga) is already implemented in the API, and I am currently integrating these features into the front-end. Eventually, I also plan to add user accounts and authentication to the application."
+    }
   }
+
 }
