@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import {AccordionModule} from 'primeng/accordion';
 import { CardModule } from 'primeng/card';
-import { ProgressBar } from 'primeng/progressbar';
 import { BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-languages-and-skills',
-  imports: [AccordionModule, CardModule, ProgressBar, CommonModule, TranslatePipe],
+  imports: [AccordionModule, CardModule, CommonModule, TranslatePipe],
   templateUrl: './languages-and-skills.component.html',
   styleUrl: './languages-and-skills.component.css'
 })

@@ -71,6 +71,11 @@ export class AppComponent {
             label: this.translate.instant('routes.languages-and-skills'),
             icon: 'pi pi-code',
             routerLink: '/languages-and-skills'
+          },
+          {
+            label: this.translate.instant('routes.projects'),
+            icon: 'pi pi-microchip',
+            routerLink: '/projects'
           }
         ];
       }
