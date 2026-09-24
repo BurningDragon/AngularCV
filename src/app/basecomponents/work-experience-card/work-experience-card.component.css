@@ -17,3 +17,8 @@
 .card-span-margin{
     margin-top: 2%;
 }
+
+.descrption-layout {
+  text-align: justify;
+  white-space: pre-line;
+}
